@@ -1,0 +1,5 @@
+blureserve.tk {
+    reverse_proxy backend:8080 # Assuming your backend is exposed on port 8080
+    reverse_proxy frontend:4173 # Assuming your frontend is exposed on port 4173
+    tls mc201611889@gmail.com
+}

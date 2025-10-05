@@ -1,0 +1,53 @@
+/* Root Element Styling */
+#root {
+  max-width: 1280px; /* Maximum width for the root container */
+  margin: 0 auto; /* Center align */
+  padding: 2rem; /* Add padding around the content */
+  text-align: center; /* Center text */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+}
+
+/* Logo Styling */
+.logo {
+  height: 6em; /* Set height of logo */
+  padding: 1.5em; /* Add space around the logo */
+  will-change: filter; /* Optimize for filter changes */
+  transition: filter 300ms; /* Smooth transition for filter changes */
+}
+
+/* Hover Effect for Logo */
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa); /* Drop shadow effect on hover */
+}
+
+/* Hover Effect for React Logo (specific style for React logo) */
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa); /* React specific hover color */
+}
+
+/* Logo Spin Animation */
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg); /* Start rotation at 0 degrees */
+  }
+  to {
+    transform: rotate(360deg); /* End rotation at 360 degrees */
+  }
+}
+
+/* Animation for Logo Spin when the user prefers no reduced motion */
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear; /* Logo spinning animation */
+  }
+}
+
+/* Card Styling */
+.card {
+  padding: 2em; /* Add padding inside cards */
+  background-color: #fff; /* Default background color */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for cards */
+  margin-bottom: 2rem; /* Space between cards */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+}
