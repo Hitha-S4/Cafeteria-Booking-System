@@ -1,5 +1,5 @@
-# panthars_blu_reserve_app
-
+# blu_reserve_app
+# Winning Team of "IBM Developer Academy Program" 
 
 # Cafeteria Seat Reservation System
 
